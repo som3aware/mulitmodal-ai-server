@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "konstant-server"
+version = "0.1.0"
+description = "server for large language multimodal"
+authors = ["som3aware <ahmed.ismail@nodogoro.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.103.2"
+uvicorn = {extras = ["standard"], version = "^0.23.2"}
+python-multipart = "^0.0.6"
+pillow = "^10.1.0"
+openai = "^0.28.1"
+torch = "^2.1.0"
+torchvision = "^0.16.0"
+transformers = "^4.34.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
